@@ -64,3 +64,11 @@ class Foo extends StrictEmitter {}
     TypeError
   )
 })()
+
+// Dont allow direct modification to this.events
+;(() => {
+  const foo = new Foo({ events: ['a'] })
+
+  assert.throws(() => foo.events.a = 1, TypeError)
+  assert.throws(() => foo.events = undefined, TypeError)
+})()
