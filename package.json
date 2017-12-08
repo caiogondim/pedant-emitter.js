@@ -5,5 +5,8 @@
   "repository": "git@github.com:caiogondim/strict-emitter.js.git",
   "author": "Caio Gondim <me@caiogondim.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "global-object": "^1.0.0"
+  }
 }
