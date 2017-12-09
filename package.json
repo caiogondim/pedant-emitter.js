@@ -6,7 +6,13 @@
   "author": "Caio Gondim <me@caiogondim.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "test": "ava test/"
+  },
   "dependencies": {
     "global-object": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.24.0"
   }
 }

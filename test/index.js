@@ -1,74 +1,69 @@
 const assert = require('assert')
+const test = require('ava')
 const StrictEmitter = require('../lib')
 
 class Foo extends StrictEmitter {}
 
-// Behaves as native EventEmitter for known events
-;(() => {
+test('Behaves as native EventEmitter for known events', t => {
   const foo = new Foo({ events: ['a'] })
   let count = 1
   foo.on(foo.events.a, () => count += 1)
   foo.emit(foo.events.a)
 
-  assert.equal(count, 2)
-})()
+  t.is(count, 2)
+})
 
-// Throws TypeError if a listener tries to listen to an undefined event
-;(() => {
+test('Throws TypeError if a listener tries to listen to an undefined event', t => {
   const foo = new Foo({ events: ['a'] })
 
-  assert.throws(
+  t.throws(
     () => foo.on(foo.events.b, () => {}),
     TypeError
   )
-})()
+})
 
-// Throws TypeError if it tries to emit undefined event
-;(() => {
+test('Throws TypeError if it tries to emit undefined event', t => {
   const foo = new Foo({ events: ['a'] })
 
-  assert.throws(
+  t.throws(
     () => foo.emit(foo.events.b),
     TypeError
   )
-})()
+})
 
-// Allows event to be added after instantiation
-;(() => {
+test('Allows event to be added after instantiation', t => {
   const foo = new Foo({ events: ['a'] })
 
-  assert.throws(
+  t.throws(
     () => foo.emit(foo.events.b),
     TypeError
   )
 
   foo.addEvent('b')
 
-  assert.doesNotThrow(
+  t.notThrows(
     () => foo.emit(foo.events.b),
     TypeError
   )
-})()
+})
 
-// Dont allow event to be referenced as literal value
-;(() => {
+test('Dont allow event to be referenced as literal value', t => {
   const foo = new Foo({ events: ['a'] })
 
-  assert.throws(
+  t.throws(
     () => foo.emit('a'),
     TypeError
   )
 
-  assert.doesNotThrow(
+  t.notThrows(
     () => foo.emit(foo.events.a),
     TypeError
   )
-})()
+})
 
-// Dont allow direct modification to this.events
-;(() => {
+test('Dont allow direct modification to this.events', t => {
   const foo = new Foo({ events: ['a'] })
 
-  assert.throws(() => foo.events.a = 1, TypeError)
-  assert.throws(() => foo.events = undefined, TypeError)
-})()
+  t.throws(() => foo.events.a = 1, TypeError)
+  t.throws(() => foo.events = undefined, TypeError)
+})
