@@ -3,7 +3,7 @@
 <h1 align="center">strict-emitter.js</h1>
 
 <div align="center">
-  <img src="http://travis-ci.org/caiogondim/strict-emitter.js.svg?branch=master" alt="Travis CI"> <img src="http://img.badgesize.io/caiogondim/strict-emitter.js/master/src/index.js?compression=gzip"> <img src='https://coveralls.io/repos/github/caiogondim/strict-emitter.js/badge.svg' alt='Coverage Status' />
+  <img src="http://travis-ci.org/caiogondim/strict-emitter.js.svg?branch=master" alt="Travis CI"> <img src="http://img.badgesize.io/caiogondim/strict-emitter.js/master/lib/index.js?compression=gzip"> <img src='https://coveralls.io/repos/github/caiogondim/strict-emitter.js/badge.svg' alt='Coverage Status' />
 </div>
 
 <br>
