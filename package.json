@@ -1,12 +1,12 @@
 {
-  "name": "strict-emitter",
+  "name": "pedant-emitter",
   "version": "1.0.1",
   "main": "lib/index.js",
-  "repository": "git@github.com:caiogondim/strict-emitter.js.git",
+  "repository": "git@github.com:caiogondim/pedant-emitter.js.git",
   "author": "Caio Gondim <me@caiogondim.com>",
   "license": "MIT",
   "private": false,
-  "browser": "build/strict-emitter.umd.js",
+  "browser": "build/pedant-emitter.umd.js",
   "scripts": {
     "test": "nyc ava -v test/**/*.js && yarn lint",
     "lint": "standard 'src/**/*.js' 'test/**/*.js'",

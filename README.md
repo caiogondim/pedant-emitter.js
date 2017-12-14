@@ -1,9 +1,9 @@
 <img src="./logo/banner.svg" width="100%" />
 
-<h1 align="center">strict-emitter.js</h1>
+<h1 align="center">pedant-emitter.js</h1>
 
 <div align="center">
-  <img src="http://travis-ci.org/caiogondim/strict-emitter.js.svg?branch=master" alt="Travis CI"> <img src="http://img.badgesize.io/caiogondim/strict-emitter.js/master/lib/index.js?compression=gzip"> <img src='https://coveralls.io/repos/github/caiogondim/strict-emitter.js/badge.svg' alt='Coverage Status' />
+  <img src="http://travis-ci.org/caiogondim/pedant-emitter.js.svg?branch=master" alt="Travis CI"> <img src="http://img.badgesize.io/caiogondim/pedant-emitter.js/master/lib/index.js?compression=gzip"> <img src='https://coveralls.io/repos/github/caiogondim/pedant-emitter.js/badge.svg' alt='Coverage Status' />
 </div>
 
 <br>
@@ -13,13 +13,13 @@ Strict event emitter. Forces event names to be accessed by key, not value.
 ## Installation
 
 ```
-npm install strict-emitter -S
+npm install pedant-emitter -S
 ```
 
 ## Usage
 
 ```js
-import Emitter from 'strict-emitter'
+import Emitter from 'pedant-emitter'
 
 const emitter = new Emitter({ events: ['a', 'b'] })
 emitter.on('c', () => {}) // => throws TypeError since the event `c` was never registered
@@ -32,7 +32,7 @@ emitter.on(emitter.events.c, () => {}) // 👍
 
 ## API
 
-`strict-emitter` extends from [`EventEmitter`](https://nodejs.org/api/events.html) (Node.js native event emitter) so the same API is available, plus the methods below:
+`pedant-emitter` extends from [`EventEmitter`](https://nodejs.org/api/events.html) (Node.js native event emitter) so the same API is available, plus the methods below:
 
 ### `events`
 

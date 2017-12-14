@@ -5,7 +5,7 @@ const closureCompiler = require('rollup-plugin-closure-compiler-js')
 module.exports = [{
   input: 'lib/index.js',
   output: {
-    file: 'build/strict-emitter.es.js',
+    file: 'build/pedant-emitter.es.js',
     format: 'es'
   },
   name: 'strictEmitter',
@@ -23,7 +23,7 @@ module.exports = [{
 }, {
   input: 'lib/index.js',
   output: {
-    file: 'build/strict-emitter.umd.js',
+    file: 'build/pedant-emitter.umd.js',
     format: 'umd'
   },
   name: 'strictEmitter',
@@ -41,7 +41,7 @@ module.exports = [{
 }, {
   input: 'lib/index.js',
   output: {
-    file: 'build/strict-emitter.cjs.js',
+    file: 'build/pedant-emitter.cjs.js',
     format: 'cjs'
   },
   name: 'strictEmitter',
