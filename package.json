@@ -6,6 +6,7 @@
   "author": "Caio Gondim <me@caiogondim.com>",
   "license": "MIT",
   "private": false,
+  "browser": "build/strict-emitter.umd.js",
   "scripts": {
     "test": "nyc ava -v test/**/*.js && yarn lint",
     "lint": "standard 'src/**/*.js' 'test/**/*.js'",
