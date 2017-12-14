@@ -1,4 +1,4 @@
-<img src="https://rawgit.com/caiogondim/pedant-emitter.js/logo/banner.svg" width="100%" />
+<img src="https://rawgit.com/caiogondim/pedant-emitter.js/master/logo/banner.svg" width="100%" />
 
 <h1 align="center">pedant-emitter.js</h1>
 
