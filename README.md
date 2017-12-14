@@ -8,7 +8,7 @@
 
 <br>
 
-Strict event emitter. Forces event names to be accesed by key, not value.
+Strict event emitter. Forces event names to be accessed by key, not value.
 
 ## Installation
 
@@ -25,27 +25,26 @@ const emitter = new Emitter({ events: ['a', 'b'] })
 emitter.on('c', () => {}) // => throws TypeError since the event `c` was never registered
 
 emitter.addEvent('c')
-emitter.on('c', () => {}) // still throws a TypeError. Event names should be acessed by key, not value
+emitter.on('c', () => {}) // still throws a TypeError. Event names should be accessed by key, not value
 
 emitter.on(emitter.events.c, () => {}) // 👍
 ```
 
-## Motivation
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem molestias, beatae facere doloremque,
-dolore modi voluptatibus perferendis expedita dolorem similique error deleniti maiores non repellat
-doloribus voluptatum, earum placeat tenetur.
-
 ## API
 
-`strict-emitter` extends from `EventEmitter` (Node.js native event emitter) so the same API is
-available, plus the methods below:
+`strict-emitter` extends from [`EventEmitter`](https://nodejs.org/api/events.html) (Node.js native event emitter) so the same API is available, plus the methods below:
 
 ### `events`
 
+Object with all events registered.
+
 ### `addEvent(eventName)`
 
+Registers new event.
+
 ### `removeEvent(eventName)`
+
+Removes previously registered event.
 
 ## Credits
 - Icon by Gregor Cresnar from the Noun Project
