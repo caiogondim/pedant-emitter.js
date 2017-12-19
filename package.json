@@ -10,7 +10,7 @@
   "scripts": {
     "test": "nyc ava -v test/**/*.js && yarn lint",
     "lint": "standard 'src/**/*.js' 'test/**/*.js'",
-    "build": "rollup -c rollup.config.js"
+    "build": "microbundle lib/index.js -o build/"
   },
   "dependencies": {
     "events": "^1.1.1",
@@ -20,11 +20,8 @@
   "devDependencies": {
     "ava": "^0.24.0",
     "coveralls": "^3.0.0",
+    "microbundle": "^0.2.4",
     "nyc": "^11.3.0",
-    "rollup": "^0.52.1",
-    "rollup-plugin-closure-compiler-js": "^1.0.6",
-    "rollup-plugin-commonjs": "^8.2.6",
-    "rollup-plugin-node-resolve": "^3.0.0",
     "standard": "^10.0.3"
   }
 }
