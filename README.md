@@ -3,7 +3,7 @@
 <h1 align="center">pedant-emitter.js</h1>
 
 <div align="center">
-  <img src="http://travis-ci.org/caiogondim/pedant-emitter.js.svg?branch=master" alt="Travis CI"> <img src="http://img.badgesize.io/caiogondim/pedant-emitter.js/master/build/pedant-emitter.es.js?compression=gzip"> <img src='https://coveralls.io/repos/github/caiogondim/strict-emitter.js/badge.svg' alt='Coverage Status' />
+  <img src="http://travis-ci.org/caiogondim/pedant-emitter.js.svg?branch=master" alt="Travis CI"> <img src="http://img.badgesize.io/caiogondim/pedant-emitter.js/master/build/pedant-emitter.js?compression=gzip"> <img src='https://coveralls.io/repos/github/caiogondim/pedant-emitter.js/badge.svg' alt='Coverage Status' />
 </div>
 
 <br>
