@@ -1,8 +1,8 @@
 <img src="https://rawgit.com/caiogondim/pedant-emitter.js/master/logo/banner.svg" width="100%" />
 
-<h1 align="center">pedant-emitter.js</h1>
+# pedant-emitter
 
-<div align="center">
+<div>
   <img src="http://travis-ci.org/caiogondim/pedant-emitter.js.svg?branch=master" alt="Travis CI"> <img src="http://img.badgesize.io/caiogondim/pedant-emitter.js/master/build/pedant-emitter.js?compression=gzip"> <img src='https://coveralls.io/repos/github/caiogondim/strict-emitter.js/badge.svg' alt='Coverage Status' />
 </div>
 
